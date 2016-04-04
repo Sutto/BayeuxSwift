@@ -1,10 +1,6 @@
 # FayeSwift
 
 [![Join the chat at https://gitter.im/hamin/FayeSwift](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hamin/FayeSwift?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-![swift](https://raw.githubusercontent.com/hamin/FayeSwift/master/swift-logo.png)
-
-
 A simple Swift client library for the [Faye](http://faye.jcoglan.com/) publish-subscribe messaging server. FayeObjC is implemented atop the [Starscream](https://github.com/daltoniam/starscream) Swift web socket library and will work on both Mac (pending Xcode 6 Swift update) and iPhone projects.
 
 It was heavily inspired by the Objective-C client found here: [FayeObjc](https://github.com/pcrawfor/FayeObjC)
@@ -13,7 +9,6 @@ It was heavily inspired by the Objective-C client found here: [FayeObjc](https:/
 
 ### Installation
 
-For now, add the following files to your project: `FayeClient.swift`, `Websocket.swift`, and `SwiftyJSON.swift`.
 
 ### Initializing Client
 
@@ -127,26 +122,9 @@ You can call sendMessage to send a dictionary object to a channel
 client.sendMessage(["text": textField.text], channel: "/cool")
 ```
 
-## Example Server
-
-There is a sample faye server using the NodeJS Faye library. If you have NodeJS installed just run the following commands to install the package:
-
-```javascript
-npm install
-```
-
-And then you can start the Faye server like so:
-
-```javascript
-node faye_server.js
-```
-## Example Project
-
-Check out the FayeSwiftDemo project to see how to setup a simple connection to a Faye server.
-
 ## Requirements
 
-FayeSwift requires at least iOS 7/OSX 10.10 or above.
+FayeSwift requires at least iOS8 / tvOS9.
 
 ## TODOs
 
@@ -159,9 +137,6 @@ FayeSwift requires at least iOS 7/OSX 10.10 or above.
 
 ## License
 
+BayeuxSwift is licensed under the MIT License and is a derivative of the [FayeSwift]() project.
+
 FayeSwift is licensed under the MIT License.
-
-## Libraries
-
-* [Starscream](https://github.com/daltoniam)
-* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
